@@ -1,496 +1,320 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<html lang="en">
 
-        <!--=============== BOXICONS ===============-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!--=============== BOXICONS ===============-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-        <!--=============== CSS ===============--> 
+        <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Halloween Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="assets/img/logo.png" alt="" class="nav__logo-img">
-                    Halloween
-                </a>
+    <title>Gradesy</title>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
+<body>
+    <!-- Preloader starts -->
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader starts -->
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#trick" class="nav__link">Candy</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">New</a>
-                        </li>
-
-                        <a href="#" class="button button--ghost">Support</a>
+    <!-- Navigation Bar starts -->
+    <header id="header">
+        <div class="menu-btn"><img src="./assets/Images/menu.svg" alt="menu"></div>
+        <div href="#" class="logo"><a href="#"><img src="./Images/logo.svg" alt="logo"> Gradesy</a></div>
+        <div class="navigation">
+            <ul class="menu">
+                <div class="close-btn"><i class="fa fa-times"></i></div>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">DropDown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item"><a href="#">Menu Item 01</a></li>
+                        <li class="sub-item"><a href="#">Menu Item 02</a></li>
+                        <li class="sub-item"><a href="#">Menu Item 03</a></li>
+                        <li class="sub-item"><a href="#">Menu Item 04</a></li>
                     </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">Multi-DropDown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item"><a href="#">Sub Menu Item 01</a></li>
+                        <li class="sub-item more">
+                            <a class="more-btn" href="#">More Items 01 <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <ul class="more-menu">
+                                <li class="more-item"><a href="#">More Item 01</a></li>
+                                <li class="more-item"><a href="#">More Item 02</a></li>
+                                <li class="more-item"><a href="#">More Item 02</a></li>
+                                <li class="more-item"><a href="#">More Item 02</a></li>
+                                <li class="more-item"><a href="#">More Item 02</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item"><a href="#">Sub Menu Item 02</a></li>
+                        <li class="sub-item"><a href="#">Sub Menu Item 03</a></li>
+                        <li class="sub-item more">
+                            <a class="more-btn" href="#">More Items 02 <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <ul class="more-menu">
+                                <li class="more-item"><a href="#">More Item 01</a></li>
+                                <li class="more-item"><a href="#">More Item 02</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item"><a href="#">Sub Menu Item 04</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Services</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Navigation Bar ends -->
 
-                    <div class="nav__close" id="nav-close">
+    <!-- Home Section starts -->
+    <section id="home">
+        <div class="home-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="home-text">
+                        <h1>Learning App</h1>
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit.</h2>
+                        
+                          <button class="modal__button" id="open-modal">
+                            Download Aplikasi
+                    </button>
+                        
+                    </div>
+                    <div class="home-img">
+                        <img src="./Images/Screenshots/1.svg" alt="Gradesy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-bottom"><img src="./Images/home-bottom.svg" alt=""></div>
+    </section>
+    <!-- Home Section ends -->
+
+    <!-- Feature Section starts -->
+    <section id="features">
+        <div class="features-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="section-title">
+                        <h2>Cool <span>features</span></h2>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fa fa-tags"></i></div>
+                        <h1>Card 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem, ipsum.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <h1>Card 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem, ipsum. Lorem, ipsum.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fa fa-users"></i></div>
+                        <h1>Card 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section ends -->
+
+    <!-- About Section starts -->
+    <section id="about">
+        <div class="particle-1"></div>
+        <div class="particle-2"></div>
+        <div class="about-section">
+            <div class="container">
+                <div class="row align-item-center justify-content-center">
+                    <div class="about-img">
+                        <img src="./Images/Screenshots/2.svg" alt="Gradesy">
+                    </div>
+                    <div class="about-text">
+                        <h1>About</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Repellendus optio hic numquam a blanditiis.lore
+                            aperiam eligendi sed.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit. Lorem ipsum
+                            aperiam eligendi sed.</p>
+                        <a href="#" class="btn btn-2">Read More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section ends -->
+
+    <!-- ScreenShot Section starts -->
+    <section id="screenshots">
+        <div class="screenshots-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>App <span>Sreenshots</span></h2>
+                </div>
+                <div class="row">
+                    <div class="screenshots-carousel owl-carousel">
+                        <div class="screenshots-item"><img src="Images/Screenshots/1.svg" alt="screenshot"></div>
+                        <div class="screenshots-item"><img src="Images/Screenshots/2.svg" alt="screenshot"></div>
+                        <div class="screenshots-item"><img src="Images/Screenshots/1.svg" alt="screenshot"></div>
+                        <div class="screenshots-item"><img src="Images/Screenshots/2.svg" alt="screenshot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ScreenShot Section ends -->
+
+    <!-- Contact Us Section starts -->
+    <section id="contact-us">
+        <div class="contact-us">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Location</div>
+                        <div class="text-one">Lorem ipsum dolor sit amet</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+91 00000 00000</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">gradesysupport@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="contact-heading">get in touch</div>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Your Topic">
+                        </div>
+                        <div class="message-box">
+                            <textarea name="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+                        </div>
+                        <a class="btn btn-2">Send <i class="fas fa-paper-plane"></i></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us Section ends -->
+
+    <!-- Footer Section starts -->
+    <footer id="footer">
+        <div class="footer-top"><img src="./assetsImages/footer-top.svg" alt="image">
+            <div class="sub-to-newsletter">
+                <h1>Subscribe Our <span>newsletter</span> </h1>
+                <div>
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-2"><i class="fa fa-envelope"></i> Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>help</h4>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="credit">Credit</div>
+    </footer>
+    <!-- Footer Section ends -->
+
+<div class="modal__container" id="modal-container">
+                <div class="modal__content">
+                    <div class="modal__close close-modal" title="Close">
                         <i class='bx bx-x'></i>
                     </div>
 
-                    <img src="assets/img/nav-img.png" alt="" class="nav__img">
+                    <img src="assets/img/star-trophy.png" alt="" class="modal__img">
+
+                    <h1 class="modal__title">Good Job!</h1>
+                    <p class="modal__description">Click the button to close</p>
+
+                    <button class="modal__button modal__button-width">
+                        View status
+                    </button>
+
+                    <button class="modal__button-link close-modal">
+                        Close
+                    </button>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-
-            </nav>
-        </header>
-
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home container" id="home">
-                <div class="swiper home-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- HOME SLIDER 1 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home1-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">The Labu “Reiza”</h4>
-                                        <span class="home__details-subtitle">The Living Pumpkin</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#1 Top Scariest Ghost</h3>
-                                    <h1 class="home__title">UOOOO <br> TRICK OR <br> TREAT!!</h1>
-                                    <p class="home__description">Hi, I'm Reiza, people call me "El Labu". I am currently trying to learn 
-                                        something new, building my own bike with parts made only in Malaysia.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- HOME SLIDER 2 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home2-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Adino & Grahami</h4>
-                                        <span class="home__details-subtitle">No words can describe them</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#2 top Best duo</h3>
-                                    <h1 class="home__title">BRING BACK <br> MY COTTON <br> CANDY</h1>
-                                    <p class="home__description">Adino steals cotton candy from his brother and eats them all in one bite, 
-                                        a hungry beast. Grahami can no longer contain his anger towards Adino.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- HOME SLIDER 3 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home3-img.png" alt="" class="home__img">
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Captain Sem</h4>
-                                        <span class="home__details-subtitle">Veteran Spooky Ghost</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#3 Top Scariest  Ghost</h3>
-                                    <h1 class="home__title">RESPAWN <br> THE SPOOKY <br> SKULL</h1>
-                                    <p class="home__description">In search for cute little puppy, Captain Sem has come back from his tragic death. 
-                                        With his hogwarts certified power he promise to be a hero for all of ghostkind.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Book Now</a>
-                                        <a href="#" class="button--link button--flex">Track Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-            
-            <!--==================== CATEGORY ====================-->
-            <section class="section category">
-                <h2 class="section__title">Favorite Scare <br> Category</h2>
-
-                <div class="category__container container grid">
-                    <div class="category__data">
-                        <img src="assets/img/category1-img.png" alt="" class="category__img">
-                        <h3 class="category__title">Ghosts</h3>
-                        <p class="category__description">Choose the ghosts, the scariest there are.</p>
-                    </div>
-
-                    <div class="category__data">
-                        <img src="assets/img/category2-img.png" alt="" class="category__img">
-                        <h3 class="category__title">Pumpkins</h3>
-                        <p class="category__description">You look at the scariest pumpkins there is.</p>
-                    </div>
-
-                    <div class="category__data">
-                        <img src="assets/img/category3-img.png" alt="" class="category__img">
-                        <h3 class="category__title">Witch Hat</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="section about" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title about__title">About Halloween <br> Night</h2>
-                        <p class="about__description">Night of all the saints, or all the dead, is celebrated on October 31 and it is a 
-                            very fun international celebration, this celebration comes from ancient origins, and is already 
-                            celebrated by everyone.
-                        </p>
-                        <a href="#" class="button">Know more</a>
-                    </div>
-
-                    <img src="assets/img/about-img.png" alt="" class="about__img">
-                </div>
-            </section>
-
-            <!--==================== TRICK OR TREAT ====================-->
-            <section class="section trick" id="trick">
-                <h2 class="section__title">Trick Or Treat</h2>
-
-                <div class="trick__container container grid">
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat1-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Toffee</h3>
-                        <span class="trick__subtitle">Candy</span>
-                        <span class="trick__price">$11.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat2-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Bone</h3>
-                        <span class="trick__subtitle">Accessory</span>
-                        <span class="trick__price">$8.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat3-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Scarecrow</h3>
-                        <span class="trick__subtitle">Accessory</span>
-                        <span class="trick__price">$15.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat4-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Candy Cane</h3>
-                        <span class="trick__subtitle">Candy</span>
-                        <span class="trick__price">$7.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat5-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Pumpkin</h3>
-                        <span class="trick__subtitle">Candy</span>
-                        <span class="trick__price">$19.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-
-                    <div class="trick__content">
-                        <img src="assets/img/trick-treat6-img.png" alt="" class="trick__img">
-                        <h3 class="trick__title">Ghost</h3>
-                        <span class="trick__subtitle">Accessory</span>
-                        <span class="trick__price">$17.99</span>
-                        <button class="button trick__button">
-                            <i class='bx bx-cart-alt trick__icon'></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-            
-            <!--==================== DISCOUNT ====================-->
-            <section class="section discount">
-                <div class="discount__container container grid">
-                    <div class="discount__data">
-                        <h2 class="discount__title">50% Discount <br> On New Products</h2>
-                        <a href="#" class="button">Go to new</a>
-                    </div>
-
-                    <img src="assets/img/discount-img.png" alt="" class="discount__img">
-                </div>
-            </section>
-
-            <!--==================== NEW ARRIVALS ====================-->
-            <section class="section new" id="new">
-                <h2 class="section__title">New Arrivals</h2>
-
-                <div class="new__container container">
-                    <div class="swiper new-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new1-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Haunted House</h3>
-                                <span class="new__subtitle">Accessory</span>
-                                
-                                <div class="new__prices">
-                                    <span class="new__price">$14.99</span>
-                                    <span class="new__discount">$29.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
+            </div>
+        </section>
         
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new2-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Halloween Candle</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$11.99</span>
-                                    <span class="new__discount">$21.99</span>
-                                </div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Javascript -->
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new3-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Witch Hat</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$4.99</span>
-                                    <span class="new__discount">$9.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new4-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Rip</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$24.99</span>
-                                    <span class="new__discount">$44.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new5-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Terrifying Crystal Ball</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$5.99</span>
-                                    <span class="new__discount">$12.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-        
-                            <div class="new__content swiper-slide">
-                                <div class="new__tag">New</div>
-                                <img src="assets/img/new6-img.png" alt="" class="new__img">
-                                <h3 class="new__title">Witch Broom</h3>
-                                <span class="new__subtitle">Accessory</span>
-        
-                                <div class="new__prices">
-                                    <span class="new__price">$7.99</span>
-                                    <span class="new__discount">$14.99</span>
-                                </div>
-
-                                <button class="button new__button">
-                                    <i class='bx bx-cart-alt new__icon'></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== OUR NEWSLETTER ====================-->
-            <section class="section newsletter">
-                <div class="newsletter__container container">
-                    <h2 class="section__title">Our Newsletter</h2>
-                    <p class="newsletter__description">
-                        Promotion new products and sales. Directly to your inbox
-                    </p>
-
-                    <form action="" class="newsletter__form">
-                        <input type="text" placeholder="Enter your email" class="newsletter__input">
-                        <button class="button">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-            <footer class="footer section">
-                <div class="footer__container container grid">
-                    <div class="footer__content">
-                        <a href="#" class="footer__logo">
-                            <img src="assets/img/logo.png" alt="" class="footer__logo-img">
-                            Halloween
-                        </a>
-
-                        <p class="footer__description">Enjoy the scariest night <br> of your life.</p>
-                        
-                        <div class="footer__social">
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                                <i class='bx bxl-facebook'></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                                <i class='bx bxl-instagram-alt' ></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                                <i class='bx bxl-twitter' ></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="footer__content">
-                        <h3 class="footer__title">About</h3>
-                        
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#" class="footer__link">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Features</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">News</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__content">
-                        <h3 class="footer__title">Our Services</h3>
-                        
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#" class="footer__link">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Discounts</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Shipping mode</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__content">
-                        <h3 class="footer__title">Our Company</h3>
-                        
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#" class="footer__link">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">About us</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Our mision</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span>
-
-                <img src="assets/img/footer1-img.png" alt="" class="footer__img-one">
-                <img src="assets/img/footer2-img.png" alt="" class="footer__img-two">
-            </footer>
-
-            <!--=============== SCROLL UP ===============-->
-            <a href="#" class="scrollup" id="scroll-up">
-                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-            </a>
-        
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
