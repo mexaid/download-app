@@ -60,7 +60,7 @@ $(".screenshots-carousel").owlCarousel({
   loop: true,
   margin: 10,
   autoplay: true,
-  autoplayTimeout: 1500,
+  autoplayTimeout: 3000,
   autoplayHoverPause: true,
 
   responsiveClass: true,
